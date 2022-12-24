@@ -1,4 +1,4 @@
-<h1 align="center">Definição de um Cluster Swarm Local com o Vagrant</h1>
+<h1 align="center">Criando um Deploy de uma Aplicação</h1>
 
 ### Descrição
 Projeto desenvolvido na [DIO](https://dio.me/) feito a fim de praticar meus conhecimentos em Kubernetes, sendo desenvolvido as imagens dos containers (backend em PHP e banco de dados MySQL), os serviços de Load Balancer e conexão com o banco de dados, a persistência de dados e o deploy dos pods. O teste foi realizado no *minikube*.
