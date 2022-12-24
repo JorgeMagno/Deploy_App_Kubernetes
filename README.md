@@ -16,7 +16,7 @@ minikube start
 ```
 #### Obs:
  - Após executar os comandos acima, dê o comando ```minikube service php --url``` para pegar a url funcional do serviço php no minikube;
- - Por fim, no arquivo *frontend/js.js* cole o retorno do comando anterior em *url:*
+ - Por fim, no arquivo **frontend/js.js** cole o retorno do comando anterior em **url:**.
 
 ### 🛠 Tecnologias
 <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" /><img src="https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white" /><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" /> 
