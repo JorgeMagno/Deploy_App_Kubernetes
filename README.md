@@ -1,4 +1,4 @@
-<h1 align="center">Criando um Deploy de uma Aplicação</h1>
+<h1 align="center">Criando um Deploys</h1>
 
 ### Descrição
 Projetos desenvolvido na [DIO](https://dio.me/) feito a fim de praticar os conhecimentos em Kubernetes. Os testes foram realizados no *minikube*.
