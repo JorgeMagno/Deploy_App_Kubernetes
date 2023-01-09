@@ -1,7 +1,7 @@
 <h1 align="center">Criando um Deploy de uma Aplicação</h1>
 
 ### Descrição
-Projetos desenvolvido na [DIO](https://dio.me/) feito a fim de praticar os conhecimentos em Kubernetes. Os testes foram realizados no *minikube*.
+Projetos desenvolvidos na [DIO](https://dio.me/) feito a fim de praticar os conhecimentos em Kubernetes. Os testes foram realizados no *minikube*.
 
 ### Pré-Requisitos
 - Conhecimento em Docker;
