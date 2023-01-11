@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+spec:
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - image: mysql:latest
+        name: mysql
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 3306
+            name: mysql
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: secret
+                key: ROOT_PASSWORD
+          - name: MYSQL_DATABASE
+            valueFrom:
+              secretKeyRef:
+                name: secret
+                key: MYSQL_DATABASE
+        volumeMounts:
+        - mountPath: /var/lib/mysql/
+          name: localmysql
+      volumes:
+        - name: localmysql
+          persistentVolumeClaim:
+            claimName: localmysql
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: connect-mysql
+spec:
+  ports:
+  - port: 3306
+  selector:
+    app: mysql
+  clusterIP: None
